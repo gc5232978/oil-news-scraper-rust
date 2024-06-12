@@ -1,6 +1,6 @@
 use reqwest::Client;
 use scraper::{Html, Selector};
-use std::fmt::{Formatter, Result};
+use std::fmt::{Debug, Formatter, Result};
 
 #[tokio::main]
 async fn main() {
@@ -10,7 +10,7 @@ async fn main() {
         summary: String,
     }
 
-    impl std::fmt::Debug for Article {
+    impl Debug for Article {
         fn fmt(&self, f: &mut Formatter<'_>) -> Result {
             write!(
                 f,

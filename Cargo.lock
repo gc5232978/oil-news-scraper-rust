@@ -763,6 +763,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "oil-news-scraper-rust"
+version = "0.1.0"
+dependencies = [
+ "reqwest",
+ "scraper",
+ "tokio",
+]
+
+[[package]]
 name = "once_cell"
 version = "1.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1648,15 +1657,6 @@ checksum = "77afa9a11836342370f4817622a2f0f418b134426d91a82dfb48f532d2ec13ef"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "webScraper"
-version = "0.1.0"
-dependencies = [
- "reqwest",
- "scraper",
- "tokio",
 ]
 
 [[package]]
